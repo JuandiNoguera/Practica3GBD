@@ -64,7 +64,9 @@ PrincipiosActivos
              ▪ readWriteAnyDatabase: Lectura y escritura en todas las bases de datos
  
 **• Roles de administración de base de datos (sobre la base de datos que se le asigne)**
+
         ◦ dbAdmin: Permite la gestión de los datos pero no acceder a la información sobre los usuarios. Puede realizar las siguientes acciones:
+	
             ▪ collStats 
             ▪ dbHash 
             ▪ dbStats 
@@ -78,7 +80,9 @@ PrincipiosActivos
             ▪ convertToCapped
             ▪ createCollections
             ▪ dropCollections
+	    
         ◦ userAdmin: Permite crear, modificar y eliminar usuarios o roles, además de otorgar privilegios. Puede realizar las siguientes acciones:
+	
             ▪ changeCustomData 
             ▪ changePassword 
             ▪ createRole 
@@ -90,19 +94,27 @@ PrincipiosActivos
             ▪ setAuthenticationRestriction 
             ▪ viewRole 
             ▪ viewUser 
+	    
         ◦ dbOwner: Permite realizar cualquier operación de administración en la base de datos, junta los privilegios de readWrite, dbAdmin y userAdmin
+	
     **• Roles de administración de base de datos (sobre todas las bases de datos)**
+    
         ◦ dbAdminAnyDatabase: Permite la gestión de los datos pero no acceder a la información sobre los usuarios
         ◦ userAdminAnyDatabase:  Permite crear, modificar y eliminar usuarios o roles, además de otorgar privilegios
+	
     **• Roles de administración de cluster**
+    
         ◦ clusterAdmin 
         ◦ clusterManager 
         ◦ clusterMonitor 
         ◦ hostManager 
     **• Roles de copia de seguridad y restauración**
+    
         ◦ backup
         ◦ restore
+	
     **• Rol de super usuario**
+    
         ◦ root
 	
 Asignación de roles
